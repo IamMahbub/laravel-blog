@@ -18,3 +18,4 @@ Route::get('dashboard', function(){
     return view('admin.dashboard');
 });
 Route::get('dashboard',"DashBoardController@dashboard")->name('admin.dashboard');
+Route::resource('post','PostController');
